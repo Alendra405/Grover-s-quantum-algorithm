@@ -28,4 +28,8 @@ result = job.result()
 counts = result.get_counts()
 
 print(f"target index = {counts}")
+
 print(f"target item {target_key} on {target_index} index ({bin(target_index)[2:].zfill(n_qubits)} binary) finded!")
+
+plot_histogram(counts)
+plt.show()
